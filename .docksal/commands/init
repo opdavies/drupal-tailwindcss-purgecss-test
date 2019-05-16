@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+fin start
+
+fin drush site-install -y \
+  --account-pass=admin \
+  --site-name='Drupal Tailwind CSS'
+
+fin drush uli -l http://drupal-tailwind.docksal
