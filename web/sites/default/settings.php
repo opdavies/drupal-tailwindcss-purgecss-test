@@ -787,3 +787,8 @@ $settings['entity_update_backup'] = TRUE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $config_directories['sync'] = '../config/sync';
+
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+$settings['cache']['bins']['render'] = 'cache.backend.null';
