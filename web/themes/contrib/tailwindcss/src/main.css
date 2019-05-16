@@ -11,6 +11,14 @@
  */
 @tailwind base;
 
+a {
+  @apply font-bold text-blue-800
+}
+
+a:hover {
+  @apply underline
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
