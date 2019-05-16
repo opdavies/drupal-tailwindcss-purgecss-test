@@ -7,5 +7,6 @@ mix.postCss('src/main.css', 'dist', [
 ])
 .purgeCss({
   folders: ['templates'],
-  extensions: ['html', 'twig']
+  extensions: ['html', 'twig'],
+  whitelistPatterns: [/tw-bg-red-200/]
 })
