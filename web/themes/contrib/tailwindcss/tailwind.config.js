@@ -5,8 +5,5 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: [],
-  corePlugins: {
-    preflight: false
-  }
+  plugins: []
 }
