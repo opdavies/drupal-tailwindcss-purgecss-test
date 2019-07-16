@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+set -e
+
+function install_site() {
+  drush site-install -y \
+    --account-pass=admin123 \
+    --site-name='Drupal Tailwind CSS'
+}
+
+function change_theme() {
+  drush theme:enable tailwindcss -y
+  drush config-set system.theme default tailwindcss -y
+}
+
+function login_link() {
+  drush uli -l http://drupal-tailwind.docksal
+}
+
+install_site
+change_theme
+login_link
