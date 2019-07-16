@@ -8,5 +8,5 @@ mix.postCss('src/tailwind.css', 'dist', [
 .purgeCss({
   folders: ['templates'],
   extensions: ['html', 'twig'],
-  whitelistPatterns: [/tw-bg-red-200/]
+  whitelistPatterns: [/bg-red-200/]
 })
